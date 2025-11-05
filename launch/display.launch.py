@@ -6,7 +6,7 @@ def generate_launch_description():
         Node(
             package='robot_state_publisher',
             executable='robot_state_publisher',
-            arguments=['/home/krish/ros2_ws/src/urdf_demo/urdf/car_demo.urdf'],
+            arguments=[{'robot_description': open(urdf_path).read()}],
             output='screen'
         ),
         Node(

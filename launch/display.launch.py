@@ -4,7 +4,7 @@ import os
 from ament_index_python.packages import get_package_share_directory
 
 def generate_launch_description():
-    package_name = 'urdf_demo'
+    package_name = 'simple_car_description'
     urdf_file_name = 'car_demo.urdf'
 
     urdf_path = os.path.join(
